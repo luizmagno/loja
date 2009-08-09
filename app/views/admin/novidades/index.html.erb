@@ -1,0 +1,24 @@
+<h3>Novidades</h3>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Texto</th>
+    <th>Status</th>
+  </tr>
+
+<% @novidades.each do |novidade| %>
+  <tr>
+    <td><%=h novidade.titulo %></td>
+    <td><%=h novidade.texto %></td>
+    <td><%=h novidade.descricao_status %></td>
+    <td><%= link_to 'Exibir', novidade %></td>
+    <td><%= link_to 'Editar', edit_novidade_path(novidade) %></td>
+    <td><%= link_to 'Excluir', novidade, :confirm => 'Confirma Exclusao do registro ?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nova novidade', new_novidade_path %>

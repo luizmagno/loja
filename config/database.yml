@@ -1,0 +1,18 @@
+# Default database configuration
+
+development:
+  adapter: postgresql
+  database: spree
+  host: localhost
+  username: postgres
+  password: teste
+  port: 5432
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+
+production:
+  adapter: sqlite3
+  database: db/production.sqlite3
+                                    

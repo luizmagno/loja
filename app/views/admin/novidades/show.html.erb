@@ -1,0 +1,18 @@
+<p>
+  <b>Titulo:</b>
+  <%=h @novidade.titulo %>
+</p>
+
+<p>
+  <b>Texto:</b>
+  <%=h @novidade.texto %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @novidade.status %>
+</p>
+
+
+<%= link_to 'Editar', edit_novidade_path(@novidade) %> |
+<%= link_to 'Voltar', novidades_path %>

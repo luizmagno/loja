@@ -1,0 +1,10 @@
+<h3>Inclusao de Novidade</h3>
+
+<% form_for(@novidade) do |f| %>
+  <%= f.error_messages %>
+
+<%= render :partial => "form", :locals => {:f => f} %>
+
+<% end %>
+
+<%= link_to 'Voltar', novidades_path %>
